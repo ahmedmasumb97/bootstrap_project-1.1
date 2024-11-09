@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>bootstrap project 1.1</title>
+
+    <!-- fab icon -->
+
+    <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/1273081551354396672/-Tzadxix_400x400.jpg">
+
+
+    <!-- bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./custome.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body class="dark-mode">
+
+<!-- navbar -->
+
+<div class=" shadow2 sticky-top ">
+
+  <div class="">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark p-4">
+        <!-- Navbar brand and logo -->
+        <div class="navbar-brand d-flex align-items-center">
+            <img class="icon-img" src="https://png.pngtree.com/template/20191014/ourmid/pngtree-building-and-construction-logo-design-template-image_317780.jpg" alt="nav-img" style="width: 40px; height: 40px;">
+            <a class="navbar-brand text-uppercase ms-2 text-shadow" href="#">Bootstrap Project</a>
+        </div>
+        
+        <!-- Toggler button for smaller screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Collapsible navigation links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto d-flex flex-column flex-md-row align-items-center gap-3">
+ 
+                <a class="nav-link text-center hover" href="#">Home</a>
+                <a class="nav-link text-center hover" href="#about">About</a>
+                <a class="nav-link text-center hover" href="#project">Project</a>
+                <a class="nav-link text-center hover" href="#contact">Contact</a>
+                
+                
+                
+                <!-- Search input -->
+                <div class="form-group mt-2 mt-md-0">
+                    <input type="search" class="form-control p-2" placeholder="Search....">
+                </div>
+                
+                <!-- Confirm button -->
+                <button type="submit" class="btn btn-primary mt-2 mt-md-0">Confirm Identity</button>
+            </div>
+        </div>
+    </nav>
+</div>
+
+</div>
+
+
+
+<!-- hero section start -->
+<div class="container mycontainer">
+  <div class="hero-section ">
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <section id="skill">
+                  <h1 class="">Hello, I'm Mohammad Masum</h1>
+                  <h2>Crafting Dynamic Digital Experiences</h2>
+                  <p class="opacity-75 pt-2">
+                      I'm a dedicated web developer specializing in Python Django and JavaScript, passionate about building web solutions that are both powerful and user-friendly. I work with precision and creativity, delivering clean, efficient code and innovative interfaces that bring digital ideas to life.
+                  </p>
+                  <p class="opacity-75">
+                      With experience in frontend and backend development, I design and develop complete solutions—from concept to deployment—focused on seamless user experiences and functional, scalable systems.
+                  </p>
+                  
+                  <!-- Skills Section -->
+                  <div id="skills">
+                      <h3>Skills
+                          <div class="line">
+                              <h1 class="inner-line"></h1>
+                          </div>
+                      </h3>
+                      <ul class="list-group">
+                          <li class="list-group-item">Python & Django</li>
+                          <li class="list-group-item">JavaScript & React</li>
+                          <li class="list-group-item">HTML & CSS (Bootstrap, Tailwind)</li>
+                          <li class="list-group-item">Database Management (MySQL)</li>
+                          <li class="list-group-item">Version Control (Git, GitHub)</li>
+                          <li class="list-group-item">Responsive Design</li>
+                      </ul>
+                  </div>
+                  
+                  <!-- Call-to-Action Buttons -->
+                  <div id="cta-buttons">
+                      <a href="#projects" class="btn btn-outline-primary">Explore My Work</a>
+                      <a href="#contact" class="btn btn-outline-success">Get in Touch</a>
+                  </div>
+              </section>
+          </div>
+
+          <div class="col-12 col-md-6 mt-5 mb-5 p-2">
+              <h1>Project Slider
+                  <div class="line">
+                      <h1 class="inner-line"></h1>
+                  </div>
+              </h1>
+              <h4>Explore some of our featured projects.</h4>
+              <p>Here are some of our completed projects you can visit.</p>
+              <div>
+                  <ul class="btn-group gap-3">
+                      <a href="#" class="card-body p-2 bg-info rounded-2">Visit More</a>
+                      <a href="#" class="card-body p-2 bg-info rounded-2">Learn More</a>
+                      <a href="#" class="card-body p-2 bg-info rounded-2">Stay with Us</a>
+                  </ul>
+              </div>
+          
+              <div id="carouselExample" class="carousel slide border border-2 p-2" data-bs-ride="carousel" data-bs-touch="true">
+                  <!-- Carousel Indicators -->
+                  <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active bg-primary" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2" class="bg-primary"></button>
+                      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3" class="bg-primary"></button>
+                      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4" class="bg-primary"></button>
+                      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5" class="bg-primary"></button>
+                      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5" aria-label="Slide 6" class="bg-primary"></button>
+                      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="6" aria-label="Slide 7" class="bg-primary 
+                      text-white me-2"></button>
+                     
+                      
+                  </div>
+              
+                  <!-- Carousel Inner Items -->
+                  <div class="carousel-inner">
+
+                    <!-- item one -->
+                      <div class="carousel-item active">
+                          <a href="https://jazzy-swan-5310df.netlify.app/" target="_blank" class="d-block w-100">
+                              <img src="./image/p7.png" class="d-block w-100" alt="Project Image 1">
+                          </a>
+                          <div class="carousel-caption d-none d-md-block text-white opacity-75 ">
+                              <h5>Project 1</h5>
+                              <p>This is a website for doctors to manage their services, offering various tools to assist in different ways.</p>
+                          </div>
+                      </div>
+
+                      <!-- end item one -->
+
+                       <!-- item two -->
+
+                       <div class="carousel-item">
+                        <a href="https://jazzy-swan-5310df.netlify.app/" target="_blank" class="d-block w-100">
+                            <img src="./image/p1.png" class="d-block w-100" alt="Project Image 1">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block text-black opacity-75 ">
+                            <h5>Project 2</h5>
+                            <p>This is a website for doctors to manage their services, offering various tools to assist in different ways.</p>
+                        </div>
+                    </div>
+
+                    <!-- end item two -->
+
+
+                    <!-- item three -->
+
+
+                    <div class="carousel-item ">
+                      <a href="https://jazzy-swan-5310df.netlify.app/" target="_blank" class="d-block w-100">
+                          <img src="./image/p2.png" class="d-block w-100" alt="Project Image 1">
+                      </a>
+                      <div class="carousel-caption d-none d-md-block text-black opacity-75">
+                          <h5>Project 3</h5>
+                          <p>This is a website for doctors to manage their services, offering various tools to assist in different ways.</p>
+                      </div>
+                  </div>
+
+                   <!-- end item three -->
+
+
+                   <!-- item four -->
+
+
+                   <div class="carousel-item ">
+                    <a href="https://jazzy-swan-5310df.netlify.app/" target="_blank" class="d-block w-100">
+                        <img src="./image/p3.png" class="d-block w-100" alt="Project Image 1">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block text-black opacity-75">
+                        <h5>Project 4</h5>
+                        <p>This is a website for doctors to manage their services, offering various tools to assist in different ways.</p>
+                    </div>
+                </div>
+
+
+                 <!-- end item four -->
+
+
+
+
+                 <!-- item five -->
+
+
+
+
+                 <div class="carousel-item ">
+                  <a href="https://jazzy-swan-5310df.netlify.app/" target="_blank" class="d-block w-100">
+                      <img src="./image/p4.png" class="d-block w-100" alt="Project Image 1">
+                  </a>
+                  <div class="carousel-caption d-none d-md-block text-black opacity-75">
+                      <h5>Project 5</h5>
+                      <p>This is a website for doctors to manage their services, offering various tools to assist in different ways.</p>
+                  </div>
+              </div>
+
+
+               <!-- end item five -->
+
+
+
+               <!-- item six -->
+
+
+               <div class="carousel-item ">
+                <a href="https://jazzy-swan-5310df.netlify.app/" target="_blank" class="d-block w-100">
+                    <img src="./image/p5.png" class="d-block w-100" alt="Project Image 1">
+                </a>
+                <div class="carousel-caption d-none d-md-block text-black opacity-75">
+                    <h5>Project 6</h5>
+                    <p>This is a website for doctors to manage their services, offering various tools to assist in different ways.</p>
+                </div>
+            </div>
+
+             <!-- end item six -->
+
+
+
+
+
+
+
+           
+
+
+
+
+
+
+
+
+
+                      <!-- Additional carousel items... -->
+                  </div>
+              
+                  <!-- Carousel Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon bg-danger p-2" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon bg-danger p-2" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- hero section end -->
+    
+
+
+
+<!-- main container -->
+
+<div class="container-lg mt-5" id="project">
+  <h1>Our running project
+    <div class="line">
+      <h1 class="inner-line"></h1>
+    </div>
+  </h1>
+  <p>This project is still in progress, but I'm excited to share some of the features and challenges I've faced along the way.</p>
+  <div class="btn-group ">
+    <button type="button" class="btn btn-outline-primary">View All Projects</button>
+    <button type="button" class="btn btn-outline-primary">Start a Project</button>
+  </div>
+
+  <div class="link d-flex justify-content-between mt-2">
+    <a href="#" class="">Previous Project</a>
+    <a href="#" class="">Next Project</a>
+  </div>
+
+  <div class="row mt-5">
+
+    <!-- Project 1 Card -->
+    <div class="col-12 col-md-6 col-lg-4 mb-4 shadow-lg">
+      <div class="card h-100">
+        <img src="./image/p1.png" class="card-img-top" alt="E-commerce Platform">
+        <div class="card-body">
+          <h5 class="card-title">E-commerce Platform</h5>
+          <p class="card-text">A comprehensive online shopping platform built with Django and React. Includes user authentication, product management, and a secure checkout system.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- end card 1 -->
+
+    <!-- start 2 Card -->
+    <div class="col-12 col-md-6 col-lg-4 mb-4 shadow-lg">
+      <div class="card h-100">
+        <img src="./image/p6.png" class="card-img-top" alt="Event Management System">
+        <div class="card-body">
+          <h5 class="card-title">Event Management System</h5>
+          <p class="card-text">An interactive event management system that allows users to create, manage, and book events with ease. Built with Django and Bootstrap.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- end card 2 -->
+
+    <!-- start 3 Card -->
+    <div class="col-12 col-md-6 col-lg-4 mb-4 shadow-lg">
+      <div class="card h-100">
+        <img src="./image/p2.png" class="card-img-top" alt="Portfolio Website">
+        <div class="card-body">
+          <h5 class="card-title">Personal Portfolio</h5>
+          <p class="card-text">A responsive portfolio website showcasing my skills, projects, and contact details. Developed using HTML, CSS, JavaScript, and Bootstrap for optimal performance.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- end card 3 -->
+
+    <!-- start card 4 -->
+
+    <div class="col-12 col-md-6 col-lg-4 mb-4 shadow-lg">
+      <div class="card h-100">
+        <img src="./image/p4.png" class="card-img-top" alt="Portfolio Website">
+        <div class="card-body">
+          <h5 class="card-title">Personal Portfolio</h5>
+          <p class="card-text">A responsive portfolio website showcasing my skills, projects, and contact details. Developed using HTML, CSS, JavaScript, and Bootstrap for optimal performance.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- end card 4 -->
+
+
+    <!-- card-5 start -->
+
+
+    <div class="col-12 col-md-6 col-lg-4 mb-4 shadow-lg">
+      <div class="card h-100">
+        <img src="./image/p3.png" class="card-img-top" alt="Portfolio Website">
+        <div class="card-body">
+          <h5 class="card-title">Personal Portfolio</h5>
+          <p class="card-text">A responsive portfolio website showcasing my skills, projects, and contact details. Developed using HTML, CSS, JavaScript, and Bootstrap for optimal performance.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- end card 5 -->
+
+
+    <!-- card-6 -->
+
+    <div class="col-12 col-md-6 col-lg-4 mb-4 shadow-lg">
+      <div class="card h-100">
+        <img src="./image/p2.png" class="card-img-top" alt="Portfolio Website">
+        <div class="card-body">
+          <h5 class="card-title">Personal Portfolio</h5>
+          <p class="card-text">A responsive portfolio website showcasing my skills, projects, and contact details. Developed using HTML, CSS, JavaScript, and Bootstrap for optimal performance.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- end card-6 -->
+
+  </div>
+</div>
+
+
+
+
+
+
+<!-- about part -->
+<div class="container shadow-lg p-4 bg-gradient mt-5 mb-5" id="about">
+
+  <div class="row justify-content-between align-items-center ">
+    <div class="col-12 col-md-6 ">
+
+      <div class="">
+        <img src="./image/masum.jpg " class="img-fluid d-block" alt="about-img">
+      </div>
+     
+    </div>
+    <div class="col-12 col-md-6">
+      <h2 cl>About Me
+        <div class="line">
+          <h1 class="inner-line"></h1>
+        </div>
+      </h2>
+      <p>I'm a software engineer with a passion for technology and creativity. I've been working remotely for the past five years, focusing primarily on web development and design. My experience includes working on various projects from small startups to large-scale companies.</p>
+      <p>I have a strong background in programming languages such as Python, JavaScript, and Java, as well as experience with various web frameworks and libraries. I'm also proficient in HTML, CSS, and responsive design. My goal is to help you build successful and innovative web applications.
+        <a href="#" class="">Read more</a>
+      </p>
+
+      <div class="button-group d-flex justify-content-between">
+        <button type="button" class="btn btn-primary">Contact Me</button>
+        <button type="button" class="btn btn-primary">Hire Me</button>
+      </div>
+     
+
+     
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- end about section -->
+
+
+
+
+
+
+
+
+<!-- contact section -->
+
+<div class="container" id="contact">
+
+  <div class="row  ">
+    <div class="col-12 col-md-6  p-3  mb-3 mt-3 shadow2  bg-gradient  col-12 col-md-12 col-lg-6 ">
+      <h2 class="fontShadow5 opacity-75 text-dark  ">Contact Me
+        <div class="line">
+          <h1 class="inner-line"></h1>
+        </div>
+      </h2>
+      
+      <p class="opacity-75 text-dark ">If you’d like to discuss a project, ask a question, or just connect, feel free to reach out using the form below or through my social media links. I’d love to hear from you!</p>
+
+      <div class="contact">
+
+      <h5>address</h5>
+      <p> <i class="fas fa-location-arrow p-2 rounded-5 me-2 bg-primary text-white""></i> Tongi,Gazipur</p>
+      <h5>phone</h5>
+      <p><i class="fas fa-phone p-2 rounded-5 me-2 bg-primary text-white""></i>
+        +01776050586</p>
+      <h5>email</h5>
+      <p><i class="fas fa-envelope p-2 rounded-5 me-2 bg-primary text-white"></i>ahmedmasum.b97@gmail.com</p>
+      <h5>social media</h5>
+      </div>
+
+      <!-- social media icon -->
+      <ul class="list-group list-group-flush d-flex flex-row">
+        <li class="list-group-item"><a href="#" class="social-link" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        <li class="list-group-item"><a href="#" class="social-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <li class="list-group-item"><a href="#" class="social-link" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li class="list-group-item"><a href="#" class="social-link" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+      </ul>
+
+    <!-- end social media icon -->
+
+    </div>
+
+    <div class="col-12 col-md-6 shadow2 bg-gradient mb-3 mt-3 pb-3 col-12 col-md-12 col-lg-6">
+      <h2 class="fontShadow5 mt-3 opacity-75 text-dark ">Contact Form
+        <div class="line">
+          <h1 class="inner-line"></h1>
+        </div>
+      </h2>
+      <p class="opacity-75 text-dark ">If you have any questions, need assistance with a project, or simply want to say hi, please don't hesitate to reach out.</p>
+
+      <!-- start form -->
+      <form action="php">
+        <div class="row">
+
+          <div class="col-6">
+            <input type="text" class="form-control mb-2" required placeholder="First Name">
+          </div>
+          <div class="col-6">
+            <input type="text" class="form-control mb-2" required placeholder="Last Name">
+          </div>
+
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="email">@</span>
+          <input type="email" class="form-control" placeholder="Email" required>
+
+        </div>
+        
+        <textarea class="form-control mb-2 "  placeholder="Message" required ></textarea>
+        <div class="form-check" >
+
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">I agree to the terms and conditions</label>
+        
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <!-- end form -->
+
+
+    </div>
+  </div>
+
+</div>
+
+
+<!-- contact section end -->
+
+
+
+
+
+
+
+<!-- footer  section start-->
+
+
+<footer>
+
+  <!-- footer about -->
+  <div class="footer mt-5 shadow4 p-5 bg-dark text-white">
+
+   <div class="row shadow7 pb-5 bt-5 ">
+
+
+         <!-- footer--about--social -->
+         <div class=" col-12 col-6 col-lg-3">
+          <h1 class="fontShadow2">Mohmmad masum</h1>
+          <p class="">
+              Hello! I mohmmad masum ,I am programmer and provide service both backend and frontend what ever you want.so if you are realy insterest ,you can hire me to sever to your website.so contact now.I am always ready ,are you ready?
+          </p>
+
+
+          <!-- footer social media icon -->
+          <div class="list-group d-flex flex-row justify-content-between">
+              <i class=" list-group-item fa-brands fa-facebook-f bg-dark text-white rounded-2 hover:bg-primary card shadow-lg"></i>
+              <i class="list-group-item fa-brands fa-instagram bg-dark text-white rounded-2 card shadow-lg"></i>
+              <i class=" list-group-item fa-brands fa-twitter bg-dark text-white rounded-2 card"></i>
+              <i class=" list-group-item fa-brands fa-linkedin bg-dark text-white rounded-2 card"></i>
+  
+      </div>
+      <!-- end footer social media icon -->
+  </div>
+
+
+  <!-- footer about social end -->
+
+
+
+  <div class="col-12 col-6 col-lg-3">
+      <h1 class="footer--about-nav--title fontShadow2">About Us</h1>
+      <ul class="list-group gap-2">
+          <li class="list-group-item"><a href="#">About Us</a></li>
+          <li class="list-group-item"><a href="#">Sevice Us</a></li>
+          <li class="list-group-item"><a href="#">Contact</a></li>
+          <li class="list-group-item"><a href="#">Company</a></li>
+      </ul>
+  </div>
+
+
+
+  <div class="col-12 col-6 col-lg-3">
+      <h1 class="footer--company-nav--title fontShadow2">Company</h1>
+      <ul class="list-group gap-2">
+          <li class="list-group-item"><a href="#">Partnership</a></li>
+          <li class="list-group-item"><a href="#">Term of use</a></li>
+          <li class="list-group-item"><a href="#">Privacy</a></li>
+          <li class="list-group-item"><a href="#">Sitemap</a></li>
+      </ul>
+  </div>
+
+
+  <div class="col-12 col-6 col-lg-3">
+      <h1 class=" fontShadow2">Get in touch</h1>
+      <p class="">Whay are being late,harry up and subscribe now quickly</p>
+      <div class="">
+        <!-- footer form -->
+          <form action="php" class="form-group">
+            <input type="text" class="form-control mb-2" name="name" id="name" placeholder="Name" required>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+              <button type="submit" class="btn btn-light mt-3">Subscribe</button>
+          </form>
+
+          <!-- end footer form -->
+      </div>
+  </div>
+
+
+   </div>
+
+
+  <div class="d-flex flex-row">
+      <p> &copf;  Copyright 2024 Ahmed masum</p>
+      
+      
+  </div>
+</footer>
+
+
+
+<!-- footer section end -->
+
+
+
+
+  
+
+
+
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
